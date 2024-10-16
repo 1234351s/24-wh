@@ -133,9 +133,6 @@ body {
 .black {
   color: var(--black-color);
 }
-.header-contact-link:hover {
-  background-color: var(--brand-color);
-}
 .footer-contact {
   display: flex;
 }

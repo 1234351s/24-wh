@@ -13,7 +13,6 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./img/sprite.svg" />
   </head>
   <body>
     <header class="header">
@@ -36,16 +35,19 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact-list">
+        <ul class="header-contact header-contact-list">
           <li class="header-contact-item">
+            <svg class="header-contact__icon" width="16px" height="12px">
+              <use href="./img/sprite.svg#icon-telephone-1"></use>
+            </svg>
             <a href="mailto:info@devstudio.com" class="header-contact-link">
               1nfo.devstudio.com</a
             >
-            <svg>
-              <use xlink:href="sprite.svg#icon-tagline"></use>
-            </svg>
           </li>
           <li class="header-contact-item">
+            <svg class="header-contact__icon" width="16px" height="12px">
+              <use href="./img/sprite.svg#icon-email-1"></use>
+            </svg>
             <a
               href="tel:+380961111111"
               class="header-contact-link header-number"
@@ -153,6 +155,11 @@
                   <p class="signature-text">Product Designer</p>
                 </figcaption>
               </figure>
+              <a href="#" class="team-social-link">
+                <svg class="team-social-icon" height="20" width="20">
+                  <use href="./img/sprite.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="team-item">
               <figure class="team-figure">

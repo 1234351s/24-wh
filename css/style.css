@@ -415,14 +415,23 @@ body {
 .header-contact__icon {
   fill: var(--black-color);
 }
+.team-social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  line-height: 40px;
+}
+
+.team-social-link:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
 .team-social-icon {
   fill: #757575;
-}
-.team-social-item:is(:hover, :focus) .team-social-icon {
-  color: var(--blue-color);
-}
-.team-social-icon:is(:hover, :focus) {
-  background-color: #2196f3;
 }
 .clients {
   margin-bottom: 94px;
@@ -443,11 +452,10 @@ body {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid rgb(175, 177, 184);
+  border: 1px solid #757575;
 }
 .clients-link:is(:hover, :focus),
 .clients-link:is(:hover, :focus) .clients-link-icon {
-  border-color: var(--blue-color);
   fill: var(--blue-color);
 }
 .clients-link {
@@ -460,7 +468,6 @@ body {
 .clients-link-icon {
   width: 106px;
   height: 60px;
-  fill: var(--black-color);
 }
 .header-nav-link::before,
 .header-nav-link.header-nav-link-current::after {

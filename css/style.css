@@ -431,7 +431,10 @@ body {
 }
 
 .team-social-icon {
-  fill: #757575;
+  fill: rgb(175, 177, 184, 1);
+}
+.social-icon-svg-sprite:hover:focus {
+  fill: var(--brand-color);
 }
 .clients {
   margin-bottom: 94px;
@@ -484,4 +487,24 @@ body {
 }
 .signature-text {
   margin-bottom: 28px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+.team-social-item {
+  height: 44px;
+  width: 44px;
+
+  border-radius: 50%;
+
+  transition: var(--black-color);
+}
+.team-social-item:is(:hover, :focus) {
+  background-color: var(--brand-color);
+}
+.advatages-item:last-child::before {
+  background-image: url(../img/asd.svg);
 }
